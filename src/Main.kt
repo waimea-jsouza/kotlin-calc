@@ -29,7 +29,7 @@ fun menu(firstInput: Double, secondInput: Double){
         }
 
     }
-    
+
 }
 
 fun getDouble(prompt: String): Double{
