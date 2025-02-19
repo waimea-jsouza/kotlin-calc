@@ -7,7 +7,7 @@ fun main(){
 }
 
 fun menu(firstInput: Double, secondInput: Double){
-    println("Choose an operator: +,-,*,/")
+    println("Choose an operator: +,-,*,/,!")
     val operator = readln()
 
     when(operator){
@@ -27,10 +27,28 @@ fun menu(firstInput: Double, secondInput: Double){
             val answer = firstInput / secondInput
             println("$firstInput / $secondInput = $answer")
         }
+        "!" ->{
+
+
+            }
+
+        }
+
 
     }
 
+
+
+fun getInt(prompt: String): Int{
+    var intValue: Int?
+    while (true) {
+        val userInput = getString(prompt)
+        intValue = userInput.toIntOrNull()
+        if (intValue != null) break
+    }
+    return intValue!!
 }
+
 
 fun getDouble(prompt: String): Double{
     var doubleValue: Double?
